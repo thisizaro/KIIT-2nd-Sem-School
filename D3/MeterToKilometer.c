@@ -1,13 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    printf("Enter distance in meters: ");
-    float distanceInMeters;
-    scanf("%f", &distanceInMeters);
+        
+    int a, kilo, meter;
 
-    float distanceInKilometers = distanceInMeters / 1000;
-
-    printf("Distance in kilometers: %.2f\n", distanceInKilometers);
+    printf("enter a number in metre: ");
+    scanf("%d",&a);
+    
+    kilo = a/1000;
+    meter = a % 1000;
+    
+    printf("We can say %d meter as %d Kilometer and %d meter", a, kilo, meter);
     return 0;
 }
 
